@@ -1,0 +1,86 @@
+8 Habitable Planet
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+8 Habitable Planet
+http://localhost:8000
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+http://localhost:8000
+8 Habitable Planet
+Server Running
+http://localhost:8000
+GET   /   200  1002 -   3.192 ms
+GET   /static/js/main.3b99ee32.js   200  473734 -   1.480 ms
+GET   /sound/click.mp3   304  - -   3.843 ms
+GET   /sound/deploy.mp3   304  - -   3.781 ms
+GET   /sound/success.mp3   304  - -   4.514 ms
+GET   /sound/abort.mp3   304  - -   4.957 ms
+GET   /sound/warning.mp3   304  - -   19.518 ms
+GET   /sound/typing.mp3   304  - -   3.350 ms
+GET   /planets   304  - -   4.145 ms
+GET   /launches   200  161 -   5.836 ms
+GET   /img/background-large.jpg   304  - -   2.538 ms
+GET   /img/glow.png   304  - -   1.354 ms
+GET   /favicon.png   200  4500 -   3.393 ms
+GET   /favicon.png   304  - -   1.051 ms
+GET   /manifest.json   200  306 -   1.602 ms
+GET   /favicon.png   304  - -   0.907 ms
+GET   /   304  - -   1.726 ms
+GET   /static/js/main.3b99ee32.js   304  - -   2.472 ms
+GET   /sound/click.mp3   304  - -   1.750 ms
+GET   /sound/deploy.mp3   304  - -   1.711 ms
+GET   /sound/success.mp3   304  - -   2.227 ms
+GET   /sound/typing.mp3   304  - -   1.019 ms
+GET   /sound/abort.mp3   304  - -   4.841 ms
+GET   /sound/warning.mp3   304  - -   0.847 ms
+GET   /favicon.png   304  - -   0.564 ms
+GET   /img/background-large.jpg   304  - -   0.672 ms
+GET   /launches   304  - -   4.593 ms
+GET   /planets   304  - -   5.362 ms
+GET   /img/glow.png   304  - -   0.941 ms
+GET   /manifest.json   304  - -   0.569 ms
+GET   /favicon.png   304  - -   0.547 ms
+GET   /   304  - -   1.931 ms
+GET   /static/js/main.3b99ee32.js   304  - -   2.870 ms
+GET   /sound/click.mp3   304  - -   2.757 ms
+GET   /sound/abort.mp3   304  - -   1.635 ms
+GET   /sound/typing.mp3   304  - -   3.237 ms
+GET   /sound/warning.mp3   304  - -   1.871 ms
+GET   /sound/success.mp3   304  - -   4.906 ms
+GET   /sound/deploy.mp3   304  - -   3.467 ms
+GET   /img/background-large.jpg   304  - -   0.785 ms
+GET   /img/glow.png   304  - -   1.563 ms
+GET   /launches   304  - -   2.691 ms
+GET   /planets   304  - -   10.122 ms
+GET   /favicon.png   304  - -   0.829 ms
+GET   /favicon.png   304  - -   0.708 ms
+GET   /favicon.png   304  - -   0.944 ms
+GET   /manifest.json   304  - -   0.486 ms
+GET   /   304  - -   3.872 ms
+GET   /static/js/main.3b99ee32.js   304  - -   1.205 ms
+GET   /sound/click.mp3   304  - -   3.683 ms
+GET   /sound/typing.mp3   304  - -   4.035 ms
+GET   /sound/warning.mp3   304  - -   0.846 ms
+GET   /sound/deploy.mp3   304  - -   1.651 ms
+GET   /sound/success.mp3   304  - -   1.814 ms
+GET   /sound/abort.mp3   304  - -   1.986 ms
+GET   /img/background-large.jpg   304  - -   1.475 ms
+GET   /img/glow.png   304  - -   2.122 ms
+GET   /launches   304  - -   1.495 ms
+GET   /planets   304  - -   1.606 ms
+GET   /favicon.png   304  - -   0.634 ms
+GET   /manifest.json   304  - -   0.896 ms
+GET   /favicon.png   304  - -   0.525 ms
