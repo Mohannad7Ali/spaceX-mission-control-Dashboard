@@ -1,18 +1,26 @@
-name: project ci
 on:
   push:
     branches: [master]
   pull_request:
     branches: [master]
+
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v2
-      - name: use node.js version 20
+
+      - name: Use Node.js 22
         uses: actions/setup-node@v2
         with:
           node-version: "22"
-      - run: npm install --prefix client
-      - run: npm install --prefix server
-      - run: npm run deploy
+
+      - name: Install server dependencies
+        run: npm install --prefix server
+
+      - name: Install client dependencies
+        run: npm install --prefix client
+
+      - name: Build and deploy
+        run: npm run deploy
