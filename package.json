@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "client": "npm run dev --prefix client",
-    "insall-client": "npm install --prefix client",
+    "install-client": "npm install --prefix client",
     "server": "npm run dev --prefix server",
     "install-server": "npm install --prefix server",
     "watch": "npm run server & npm run client",
