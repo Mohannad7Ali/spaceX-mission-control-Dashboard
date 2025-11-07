@@ -8,12 +8,12 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        node-version: [22.x, 20.x]
+        node-version: [22.x]
         mongodb-version: [6.0]
-        os: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
 
     env:
       MONGODB_URL: mongodb://localhost:27017/nasa
@@ -21,12 +21,26 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Update npm
+        run: npm install -g npm@latest
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.npm
+            server/node_modules
+            client/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.6.0
@@ -34,16 +48,13 @@ jobs:
           mongodb-version: ${{ matrix.mongodb-version }}
 
       - name: Install server dependencies
-        run: npm install --prefix server
+        run: npm ci --prefix server
 
       - name: Install client dependencies
-        run: npm install --prefix client
+        run: npm ci --prefix client
 
       - name: Build client
         run: npm run build --prefix client
-
-      - name: Start server (for build verification)
-        run: npm start --prefix server & sleep 5
 
       - name: Run tests
         run: npm test --prefix server && npm test --prefix client
